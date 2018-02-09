@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Enlaces jQuery -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    
+    <!-- Enlaces booststrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Enlace estilos -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" media="only screen and (max-width:758px)" href="../css/movil.css">
+    <!-- <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width:1024px)" href="../css/tablet.css" > -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Enlace js -->
+    <script src="../js/comic.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <title>Premios Marvel</title>
+</head>
+
+<body>
+    <header id="header" role="heading" aria-level="1" tabindex="0"></header>
+    <div id="contenedor-spinner">
+        <img src="../img/spinner.svg" alt="spinner de carga">
+    </div>
+    <div id="contenedor-error">
+        <h2 class="titulo" id="titulo-error">Por favor, recargue la página</h2>
+        <img src="../img/error.png" alt="Imagen error">
+    </div>
+    <div id="contenedor-comic">
+        <div class="col-md-3 info" id="nav-izq">
+            <div id="cartelera">
+
+            </div>
+            <div id="nav-izq-contenido">
+                <div class="col-xs-6 col-sm-6 col-md-5">
+                    <h1 class="titulo-datos-comic" tabindex="0">Año</h1>
+                    <span id="span-año" tabindex="0"></span>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-7">
+                    <h1 class="titulo-datos-comic" tabindex="0">Precio</h1>
+                    <span id="span-precio" tabindex="0"></span>
+                </div>
+                <div class="col-xs-12">
+                    <h1 class="titulo-datos-comic" tabindex="0">Creadores</h1>
+                    <span id="span-creador" tabindex="0"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-1 info expandable" id="nav-der" tabindex="0"></div>
+    </div>
+    <div id="contenedor-botones">
+        <button>Volver atrás</button>
+        <button>Voto anónimo</button>
+        <button>Vota y consigue entradas</button>
+    </div>
+</body>
+
+</html>

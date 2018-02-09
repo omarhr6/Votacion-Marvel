@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Enlaces jQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.simplePagination.js"></script>
+
+    <!-- Enlaces booststrap -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Enlace js -->
+    <script type="text/javascript" src="js/marvel.js"></script>
+
+    <!-- Enlace estilos -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/simplePagination.css" />
+    <link rel="stylesheet" media="only screen and (max-width:758px)" href="css/movil.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <title>Premios Marvel</title>
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" aria-level="1" tabindex="0">Premios Marvel</h1>
+    </header>
+    <h2 class="titulo" role="heading" tabindex="0">Bienvenidos a las votaciones de la gala Marvel.</h2>
+    <div id="contenedor-spinner">
+        <img src="img/spinner.svg" alt="spinner de carga">
+    </div>
+    <div id="contenedor-error">
+        <h2 class="titulo" id="titulo-error">Por favor, recargue la página</h2>
+        <img src="img/error.png" alt="Imagen error">
+    </div>
+    <div id="contenedor" tabindex="0" aria-label="Películas disponibles para votar" aria-level="2"></div>
+</body>
+
+</html>

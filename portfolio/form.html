@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Enlaces jQuery -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+
+    <!-- Enlaces booststrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Enlace estilos -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" media="only screen and (max-width:758px)" href="../css/movil.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Enlace js -->
+    <script src="../js/form.js"></script>
+
+    <title>Premios Marvel</title>
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" aria-level="1" tabindex="0">Premios Marvel</h1>
+    </header>
+    <div id="contenedor-spinner">
+        <img src="../img/spinner.svg" alt="spinner de carga">
+    </div>
+    <div id="contenedor-error">
+        <h2 class="titulo" id="titulo-error">Por favor, recargue la página</h2>
+        <img src="../img/error.png" alt="Imagen error">
+    </div>
+    <div id="contenedor-formulario" tabindex="0" aria-label="Formulario a rellenar con los datos personales." aria-level="2">
+        <div class="col-xs-12 col-md-4 col-md-offset-1 contenedor-imagen">
+            <div id="form-comic" tabindex="0" aria-level="3"></div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h2 role="heading" aria-level="2" tabindex="0">Introduzca datos personales</h2>
+            <form id="formulario" action="puntuaciones.html">
+                <label for="txtNombre">
+                    <span>Nombre: </span>
+                    <input type="text" name="txtNombre" id="txtNombre" required aria-label="Introduce tu nombre">
+                </label>
+                <br/>
+                <label for="txtApellido">
+                    <span>Apellidos: </span>
+                    <input type="text" name="txtApellido" id="txtApellido" required aria-label="Introduce tus apellidos">
+                </label>
+                <br/>
+                <label for="txtTelefono">
+                    <span>Teléfono: </span>
+                    <input type="tel" name="txtTelefono" id="txtTelefono" required aria-label="Introduce número de teléfono">
+                </label>
+                <br/>
+                <label for="txtCorreo">
+                    <span>Correo Electrónico: </span>
+                    <input type="text" name="txtCorreo" id="txtCorreo" required aria-label="Introduce tu correo electronico">
+                </label>
+                <br/>
+                <label for="txtFecha">
+                    <span>Fecha de nacimiento: </span>
+                    <input type="date" name="txtFecha" id="txtFecha" required aria-label="Introduce tu fecha de nacimiento">
+                </label>
+            </form>
+        </div>
+        <div id="contenedor-botones">
+            <button>Volver atrás</button>
+            <button type="submit" form="formulario" id="boton-votar">Vota y consigue entradas</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

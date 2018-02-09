@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: none;
+    background-color: rgb(146, 145, 145) !important;
+    padding-bottom: 40px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+    font-size: 48px;
+    color: rgb(37, 37, 37);
+}
+
+.titulo {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(37, 37, 37);
+}
+
+#contenedor-error{
+    display: none;
+    text-align: center;
+}
+
+#titulo-error{
+    color: #B22222;
+}
+
+#contenedor-spinner{
+    text-align: center;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 56vw;
+    margin: 0 auto;
+    margin-top: 20px !important;
+}
+
+.contenedores-comics, .contenedores-personajes{
+    width: 230px;
+    height: 345px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.40);
+    background-color: #ccc;
+    transition: all 500ms ease-in-out;
+}
+
+.contenedores-comics:hover, .contenedores-personajes:hover {
+    transform: scale(1.2);
+}
+
+.contenedores-comics img, .contenedores-personajes img {
+    width: 228px;
+    height: 278px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contenedores-comics span, .contenedores-personajes span {
+    margin-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header {
+    margin: 0 auto;
+    border: 2px solid rgb(143, 143, 143);
+    box-shadow: 7px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    height: 300px;
+    width: 1250px;
+    overflow: hidden;
+}
+
+#contenedor-comic {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    margin-top: 20px !important;
+    width: 62vw !important;
+}
+
+.info {
+    border: 1px solid #ccc;
+    height: 440px;
+    position: absolute;
+    top: -50px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+}
+
+#cartelera {
+    margin: 0 auto;
+    width: 228px;
+    height: 280px;
+    position: relative;
+    top: -100px;
+}
+
+#carteleraComic {
+    width: 228px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+#nav-izq-contenido {
+    position: relative;
+    top: -90px;
+    height: 140px;
+}
+
+#nav-izq-contenido div h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#tituloComic {
+    font-weight: bold;
+}
+
+#nav-der p {
+    font-size: 1.3em;
+}
+
+#contenedor-botones {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#contenedor-botones button {
+    padding: 10px 35px;
+    overflow: hidden;
+    border: none;
+    background: #285972;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#contenedor-botones button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+#contenedor-formulario {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 20px !important;
+    border: 1px solid rgb(163, 157, 157);
+    padding: 40px 0;
+    border-radius: 10px;
+    background-color: #ccc;
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+#contenedor-formulario h3 {
+    font-weight: bold;
+}
+
+#contenedor-formulario form {
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+label span {
+    margin-bottom: 20px;
+    min-width: 190px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+label input {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#form-comic {
+    margin: 0 auto;
+    width: 228px;
+    height: 347px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+#comic-form {
+    width: 226px;
+    height: 278px;
+    border-radius: 5px;
+}
+
+#form-comic span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#contenedor-puntuaciones {
+    display: flex;
+    text-align: center;
+}
+
+#contenedor-puntuaciones h2 {
+    color: rgb(37, 37, 37);
+}
+
+#piechart{
+    margin-bottom: 20px !important;
+}
+
+#piechart, #piechart2{
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#piechart svg, #piechart2 svg {
+    border-radius: 15px;
+}
+
+#contenedor-botones-graficos {
+    margin: 10px;
+}
+
+#contenedor-botones-graficos button {
+    margin: 20px;
+}
+
+#contenedor-botones-graficos button img {
+    width: 40px;
+    height: auto;
+}
+
+#contenedor-botones-graficos button:focus {
+    border: 3px solid red;
+}

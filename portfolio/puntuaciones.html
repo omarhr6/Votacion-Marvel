@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Enlaces jQuery -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    
+    <!-- Enlaces booststrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Enlace estilos -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" media="only screen and (max-width:758px)" href="../css/movil.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Enlace js -->
+    <script src="../js/puntuaciones.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Premios Marvel</title>
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" aria-level="1" tabindex="0">Premios Óscar</h1>
+    </header>
+    <div id="contenedor-spinner">
+        <img src="../img/spinner.svg" alt="spinner de carga">
+    </div>
+    <div id="contenedor-error">
+        <h2 class="titulo" id="titulo-error">Por favor, recargue la página</h2>
+        <img src="../img/error.png" alt="Imagen error">
+    </div>
+    <div id="contenedor-puntuaciones">
+        <div class="col-xs-12 col-s-offset-2">
+            <h2 role="heading" tabindex="0">Gráfico de votaciones</h2>
+            <div id="contenedor-botones-graficos">
+                <button>
+                    <img src="../img/botones/grafico1.png" alt="Ir al gráfico 1">
+                </button>
+                <button>
+                    <img src="../img/botones/grafico2.png" alt="Ir al gráfico 2">
+                </button>
+                <button>
+                    <img src="../img/botones/grafico3.png" alt="Ir al gráfico 3">
+                </button>
+            </div>
+            <div id="piechart" tabindex="0" aria-label="Gráfico con los resultados de las votaciones." aria-level="2"></div>
+            <div id="piechart2" tabindex="0" aria-label="Gráfico con los resultados de las votaciones." aria-level="2"></div>
+        </div>
+    </div>
+    <div id="contenedor-botones">
+        <button>Volver al inicio</button>
+    </div>
+</body>
+
+</html>
